@@ -1,0 +1,238 @@
+@import-once "varibles.less";
+@import-once "mixin.less";
+
+@media screen and (max-width: 1500px) {
+  .popular_items {
+    &>div {
+      height: 650px;
+    }
+  }
+  .form_container {
+    padding-left: 50px;
+  }
+  main {
+    #categoryCarousel {
+      .carousel-inner {
+        .item {
+          h4 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  header {
+    .container-fluid {
+      .header_adress_container {
+        left: 35%;
+      }
+    }
+  }
+  #headerCarousel {
+    .carousel_absolute_block {
+      left: 15%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  main {
+    .main_capt {
+      padding-left: 50px;
+    }
+
+    .adventage {
+      height: auto;
+      margin-bottom: 0;
+      & > div {
+         border: none;
+         &:not(:last-child) {
+          border-bottom: 1px solid @white;
+         }
+      }
+    }
+    .section_capt {
+      background-image: none;
+    }
+    .popular_items {
+      padding: 25px 50px;
+      &>.col-md-4 {
+        height: auto;
+        border: none;
+        border-bottom: 1px solid @bord_color;
+      }
+    }
+    .news_block {
+      border: none;
+    }
+    .news_block {
+      .row {
+        .left_block {
+          height: auto;
+        }
+      }
+    }
+    .popular_items {
+      padding-left: 0;
+      padding-right: 0;
+      background: transparent;
+      &>div {
+        padding: 0 80px;
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+      .title {
+        background: transparent;
+        h4 {
+          font-size: @h2_size;
+        }
+
+      }
+      .item_options {
+        background: transparent;
+        span {
+          font-size: @h2_size - 4;
+        }
+      }
+    }
+
+  }
+
+  footer {
+    height: auto;
+    //padding: 50px;
+    padding-bottom: 50px;
+    .row {
+      height: auto;
+    }
+    .footer_contacts,
+    .umi_copy {
+      padding: 50px;
+      color: @white;
+    }
+    .footer_contacts {
+      h2 {
+      font-size: @baseFontSize !important;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 767px) {
+  main {
+    .news_block {
+      .left_news,
+      .right_news {
+        padding: 0 10%;
+        margin-bottom: 0;
+      }
+      .left_news {
+        margin-bottom: 50px;
+      }
+      .row {
+        .caption {
+          .align();
+        }
+        .right_block,
+        .left_block {
+          height: auto !important;
+          padding: 50px 0;
+        }
+      }
+    }
+  }
+  .popular_items {
+    &>div {
+      padding: 0 40px !important;
+    }
+  }
+}
+@media screen and (max-width: 579px) {
+  .popular_items {
+    &>div {
+      padding: 0 20px !important;
+      .item_options {
+        padding: 50px 20px;
+      }
+    }
+  }
+  main {
+    .mobile_category {
+      padding-left: 0;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  #topMobileCarousel {
+    .carousel-inner {
+      .item {
+      .carousel-caption {
+        h2 {
+          font-size: @h2_larg;
+          }
+        h3 {
+          font-size: @mediumSize;
+        }
+        }
+      }
+    }
+  }
+  footer {
+    .footer_contacts {
+      span:first-of-type {
+        font-size: @baseFontSize * 0.7 !important;
+      }
+      h2 {
+        font-size: @baseFontSize * 0.8 !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .section_capt {
+    padding: 25px 0;
+    .align();
+
+    h2 {
+        font-size: @h2_size;
+
+    }
+  }
+  main {
+    .popular_items {
+      //padding: 25px 25px;
+      .title {
+        h4 {
+          font-size: @baseFontSize;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .absolute_block {
+    display: none;
+  }
+  footer {
+    .footer_contacts,
+    .umi_copy {
+      padding: 25px 10px;
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .top_call {
+    a.btn_orange {
+      width: 175px !important;
+    }
+    padding-left: 5px !important;
+    .header_btn {
+      width: 150px !important;
+      padding: 15px 10px 15px 10px !important;
+      font-size: @baseFontSize - 3 !important;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+
+/*adventage sprite*/
+.sprite_adventage {
+    background-image: url('../img/sprite_adventage.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon_build {
+    width: 95px;
+    height: 95px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon_garant {
+    width: 88px;
+    height: 88px;
+    background-position: -110px -5px;
+}
+
+.sprite-icon_speed {
+    width: 88px;
+    height: 88px;
+    background-position: -110px -103px;
+}
+
+
+
+/*social sprite*/
+
+
+
+.sprite_social {
+    background-image: url('../img/sprite_social.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-footer_fb {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -5px;
+}
+
+.sprite-footer_inst {
+    width: 20px;
+    height: 20px;
+    background-position: -35px -5px;
+}
+
+.sprite-footer_odn {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -35px;
+}
+
+.sprite-footer_tw {
+    width: 20px;
+    height: 20px;
+    background-position: -35px -35px;
+}
+
+.sprite-footer_vk {
+    width: 20px;
+    height: 20px;
+    background-position: -65px -5px;
+}
+
+
+.sprite-contact {
+    background-image: url('../img/sprite_contact.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--contact_marker {
+    width: 42px;
+    height: 54px;
+    background-position: -5px -5px;
+}
+
+.sprite-contact_mail {
+    width: 41px;
+    height: 27px;
+    background-position: -57px -5px;
+}
+
+.sprite-contact_phone {
+    width: 31px;
+    height: 51px;
+    background-position: -57px -42px;
+}

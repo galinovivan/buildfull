@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <meta charset="utf-8">
+        <title>
+                Стройлого
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sprites.css">
+        <link rel="stylesheet" href="css/media.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+</head>
+<body>
+<div class="modal fade" id="callBackModal">
+        <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><img
+                                        src="img/modal_close.png" alt="close"></button>
+                                <h2 class="up modal-title">Оставить заявку</h2>
+
+                        </div>
+                        <div class="modal-body">
+                                <form method="post" id="callBackForm">
+                                        <input type="text" name="name" placeholder="Как вас зовут?" required>
+                                        <input type="text" name="user_contact" placeholder="Почта или телефон" required>
+                                        <textarea name="messages" id="" cols="30" rows="7"
+                                                  placeholder="А вот тут-то мы и напишем!" required></textarea>
+                                        <input type="submit" name="done" value="ОТПРАВИТЬ">
+                                </form>
+                        </div>
+                </div>
+        </div>
+</div>
+<ul id="mobileMenu" class="visible-xs visible-sm hidden-md">
+        <li><a href="about.html" >О компании</a></li>
+        <li><a href="services.html">Наши Услуги</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li id="menuCloseToggle" class="close_toggle"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+</ul>
+<header class="hidden-xs hidden-sm">
+<div class="container-fluid clearfix">
+        <div class="nav_container absolute clearfix hidden-xs hidden-sm">
+
+                <div class="header_logo white_block">
+                        <a href="index.html">
+                                <img src="img/header_logo.png" alt="logo" class="img-responsive">
+                                <h2 class="up">Стройтех</h2>
+                        </a>
+                        </div>
+
+
+                <ul class="header_nav">
+                        <li class="up"><span class="gray">01</span><a href="about.html">О компании</a></li>
+                        <li class="up"><span class="gray">02</span><a href="services.html">Наши услуги</a></li>
+                        <li class="up"><span class="gray">03</span><a href="news.html">Новости</a></li>
+                        <li class="up"><span class="gray">04</span><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <div class="header_btn">
+                        <a href="#callBackModal" data-toggle="modal" style="color: white" class="btn_orange">Оставить заявку</a>
+                </div>
+                </div>
+
+                 <div class="header_adress_container absolute hidden-xs hidden-sm">
+                         <span class="header_adress">
+                                 Санкт-Петербург, пр. Большевиков, 632
+                         </span>
+                 </div>
+                <div class="header_contact_container absolute hidden-xs hidden-sm">
+                        <h2 class="header_contact">
+                                <span class="gray">+7(499)</span>
+                                703-39-00
+                        </h2>
+                </div>
+
+
+
+        <div class="row">
+                <div id="headerCarousel" data-ride="carousel" data-interval="3000" class="carousel slide">
+                        <ol class="carousel-indicators">
+                                <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#headerCarousel" data-slide-to="1"></li>
+                                <li data-target="#headerCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                                <div class="item active">
+
+                                        <div class="carousel-caption">
+
+                                                <h1 class="up">
+                                                        Аренда
+                                                </h1>
+                                                <h2 class="up">
+                                                        Строительной техники
+                                                </h2>
+                                        </div>
+                                </div>
+                                <div class="item">
+
+                                </div>
+                                <div class="item">
+
+                                </div>
+
+                                <div class="lighteen_block absolute"></div>
+                        <div class="controls_container base_color_block">
+                        <a href="#headerCarousel" class="carousel-control left" data-slide="prev"><img
+                                src="img/carousel_left.png" alt="left"></a>
+                        <a href="#headerCarousel" class="carousel-control right" data-slide="next"><img
+                                src="img/carousel_right.png" alt="right"></a>
+                                </div>
+                                </div>
+                </div>
+        </div>
+</div>
+</header>
+<div class="header_mobile visible-xs visible-sm">
+        <div class="container-fluid">
+                <div class="row">
+                        <a id="nav_toggle" class="nav_mobile pull-left">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                        </a>
+
+                <div class="logo_mobile">
+                        <a href="index.html"><img src="img/logo_mobile.png" alt="logo" class="img-responsive"></a>
+                </div>
+                <div class="contact_mobile pull-right">
+                        <a href="call.html"><img src="img/mobile_pen.png" alt="contact"></a>
+                </div>
+        </div>
+                </div>
+
+</div>
+<div class="carousel slide visible-xs visible-sm" id="topMobileCarousel" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+                <li data-target="#topMobileCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#topMobileCarousel" data-slide-to="1"></li>
+                <li data-target="#topMobileCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+                <div class="item active">
+                        <div class="carousel-caption">
+                                <h2>Аренда</h2>
+                                <h3>Строительной техники</h3>
+                        </div>
+
+                </div>
+                <div class="item">
+                        <div class="carousel-caption">
+                                <h2>Аренда</h2>
+                                <h3>Строительной техники</h3>
+                        </div>
+                </div>
+                <div class="item">
+                        <div class="carousel-caption">
+                                <h2>Аренда</h2>
+                                <h3>Строительной техники</h3>
+                        </div>
+                </div>
+        </div>
+        <div class="absolute_block absolute clearfix">
+                <div class="black"></div>
+                <div class="white"></div>
+        </div>
+</div>
+
+<main>
+
+        <div class="capt_container background_gray main_capt visible-xs visible-sm">
+        <div class="container-fluid">
+                <div class="row">
+                <h2>Каталог</h2>
+                <h3>Стоительной техники</h3>
+                        </div>
+                </div>
+        </div>
+        <div class="mobile_category visible-xs visible-sm">
+                <div class="container-fluid">
+                        <div class="carousel slide" data-ride="carousel" data-interval="3000" id="mobileCategoryCarousel">
+                                <div class="carousel-inner">
+                                        <div class="item active">
+                                                <div class="col-xs-6">
+                                                        <div class="row">
+                                                                <div class="col-xs-6 category_item">
+                                                                        <h4>Автокраны</h4>
+                                                                </div>
+                                                                <div class="col-xs-6 category_item">
+                                                                        <img src="img/category_item_1.png" alt="item" class="img-responsive">
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-xs-6">
+                                                        <div class="row">
+                                                                <div class="col-xs-6 category_item">
+                                                                        <h4>Самосвалы</h4>
+                                                                </div>
+                                                                <div class="col-xs-6 category_item">
+                                                                        <img src="img/category_item_2.png" alt="item" class="img-responsive">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="item">
+                                                <div class="col-xs-6">
+                                                        <div class="row">
+                                                                <div class="col-xs-6 category_item">
+                                                                        <h4>Экскаваторы</h4>
+                                                                </div>
+                                                                <div class="col-xs-6 category_item">
+                                                                        <img src="img/category_item_3.png" alt="item" class="img-responsive">
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-xs-6">
+                                                        <div class="row">
+                                                                <div class="col-xs-6 category_item">
+                                                                        <h4>Грунтовые катки</h4>
+                                                                </div>
+                                                                <div class="col-xs-6 category_item">
+                                                                        <img src="img/category_item_4.png" alt="item" class="img-responsive">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="item">
+                                                <div class="col-xs-6">
+                                                        <div class="row">
+                                                                <div class="col-xs-6 category_item">
+                                                                        <h4>Мини погрузчики</h4>
+                                                                </div>
+                                                                <div class="col-xs-6 category_item">
+                                                                        <img src="img/category_item_5.png" alt="item" class="img-responsive">
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-xs-6">
+                                                        <div class="row">
+                                                                <div class="col-xs-6 category_item">
+                                                                        <h4>Компрессоры</h4>
+                                                                </div>
+                                                                <div class="col-xs-6 category_item">
+                                                                        <img src="img/category_item_6.png" alt="item" class="img-responsive">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        </div>
+                        <!--<div class="col-xs-6">-->
+                                <!--<div class="row">-->
+                                        <!--<div class="col-xs-6 item category_item">-->
+                                                <!--<h4>Самосвалы</h4>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-xs-6 category_item">-->
+                                                <!--<img src="img/category_item_2.png" alt="item" class="img-responsive">-->
+                                                        <!--</div>-->
+                                                <!--</div>-->
+                                        <!--</div>-->
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="category_left_block absolute hidden-xs hidden-sm"></div>
+        <div class="container">
+                <div class="row hidden-xs hidden-sm">
+                        <div class="col-md-6 background_gray main_capt">
+                                <h2>Каталог</h2>
+                                <h3 class="up">Строительной техники</h3>
+                                <div class="carousel_absolute_block absolute">
+                                        <div class="carousel_white background_black"></div>
+                                        <div class="carousel_black background_white"></div>
+                                </div>
+                        </div>
+
+                </div>
+                <div class="row hidden-xs hidden-sm">
+                        <div id="categoryCarousel" data-ride="carousel" data-interval="3000" class="carousel slide">
+                                <div class="carousel-inner">
+                                        <div class="item active">
+                                                <div class="container">
+                                                        <div class="row">
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_1.png" alt="item-1"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                         <h4 class="up">Автокраны</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_2.png" alt="item-2"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Самосвалы</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_3.png" alt="item-3"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Экскаваторы</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_4.png" alt="item-4"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Грунтовые катки</h4>
+
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_5.png" alt="item-5"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Мини погрузчики</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_6.png" alt="item-6"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                         <h4 class="up">Компрессоры</h4>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="item">
+                                                <div class="container">
+                                                        <div class="row">
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_1.png" alt="item-1"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Автокраны</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_2.png" alt="item-2"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Самосвалы</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_3.png" alt="item-3"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Экскаваторы</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_4.png" alt="item-4"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Грунтовые катки</h4>
+
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_5.png" alt="item-5"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Мини погрузчики</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_6.png" alt="item-6"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Компрессоры</h4>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="item">
+                                                <div class="container">
+                                                        <div class="row">
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_1.png" alt="item-1"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Автокраны</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_2.png" alt="item-2"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Самосвалы</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_3.png" alt="item-3"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Экскаваторы</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_4.png" alt="item-4"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Грунтовые катки</h4>
+
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_5.png" alt="item-5"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Мини погрузчики</h4>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <div class="img_container">
+                                                                        <img src="img/category_item_6.png" alt="item-6"
+                                                                             class="img-responsive">
+                                                                                </div>
+                                                                        <h4 class="up">Компрессоры</h4>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <a href="#categoryCarousel" class="carousel-control left" data-slide="prev"><img
+                                        src="img/category_left.png" alt="left"></a>
+                                <a href="#categoryCarousel" class="carousel-control right" data-slide="next"><img
+                                        src="img/category_right.png" alt="right"></a>
+                        </div>
+                </div>
+        </div>
+        <div class="container news_block all_width">
+                <div class="row">
+                        <div class="col-md-6 left_block">
+                                <div class="text_block">
+                                <p class="bold medium_size">
+                                        Аренда строительной техники с нашей компанией – это всегда внимательное
+                                        и вежливое отношение к заказчику, конкурентные цены и отличная надежная рабочая машина!
+                                </p>
+                                <p class="small light_gray_text">
+                                        Мы профессионалы своего дела и относимся к своей работе
+                                        со всей ответственностью. Будь это своевременное предоставление строительных машин на объект или оформление первичных бухгалтерских документов, наши сотрудники никогда
+                                        не заставят Вас "просить дважды"!
+                                </p>
+                                        </div>
+                        </div>
+                        <div class="col-md-6 background_gray right_block">
+                                <div class="row">
+
+                                        <div class="caption">
+                                                <h1>новости</h1>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-xs-12 left_news col-sm-6">
+                                                <div class="date media">
+                                                        <a class="media-left">
+                                                                <h2 class="media-object">28</h2>
+                                                        </a>
+                                                        <div class="media-body">
+                                                                <h4 class="media-heading">АПРЕЛЯ</h4>
+                                                                <p>2016</p>
+                                                        </div>
+
+                                                </div>
+                                                <div class="small-capt">
+                                                        <strong><p>Новое интерьвью нашего руководителя!</p></strong>
+
+                                                </div>
+                                                <div class="content">
+                                                        <p>Интервью генерального директора строительной компании «Гогланд» Ильи Николаевича Ёлкина</p>
+                                                </div>
+                                                <div class="more">
+                                                        <a href="#"><img src="img/news_more.png" alt="more"></a>
+                                                </div>
+
+
+
+
+                                        </div>
+
+                                        <div class="col-xs-12 right_news col-sm-6">
+
+                                                <div class="date media">
+                                                        <a class="media-left">
+                                                                <h2 class="media-object">25</h2>
+                                                        </a>
+                                                        <div class="media-body">
+                                                                <h4 class="media-heading">МАЯ</h4>
+                                                                <p>2016</p>
+                                                        </div>
+                                                </div>
+                                                <div class="small-capt">
+                                                        <strong><p>Мы опять участвуем в выставках!</p></strong>
+
+                                                </div>
+                                                <div class="content">
+                                                        <p>Стройлого примет участие в весенних выставках недвижимости 2016 г.</p>
+                                                </div>
+                                                <div class="more">
+                                                        <a href="#"><img src="img/news_more.png" alt="more"></a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="container all_width">
+                <div class="row adventage">
+                        <div class="col-md-4">
+                                <div class="row">
+                                        <div class="col-xs-6">
+                                <i class="sprite_adventage sprite-icon_build"></i>
+                                                </div>
+                                        <div class="col-xs-6">
+                                                <p class="up">Собственный парк спецтеники</p>
+                                        </div>
+                                        </div>
+                        </div>
+                        <div class="col-md-4">
+                                 <div class="row">
+                                         <div class="col-xs-6">
+                                <i class="sprite_adventage sprite-icon_garant"></i>
+                                                 </div>
+                                         <div class="col-xs-6">
+                                                 <p class="up">Оперативная поставка спецтехники</p>
+                                         </div>
+                                         </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="row">
+                                        <div class="col-xs-6">
+                                <i class="sprite_adventage sprite-icon_speed"></i>
+                                                </div>
+                                        <div class="col-xs-6">
+                                                <p class="up">Гарантия выполненных работ</p>
+                                        </div>
+                                        </div>
+                        </div>
+                </div>
+        </div>
+        <div class="container all_width">
+                <div class="row section_capt background_black">
+                        <h2>Популярные модели</h2>
+                </div>
+                <div class="row popular_items background_gray">
+                        <div class="col-md-4">
+                            <div class="title">
+                                    <h4>Экскаватор гусеничный CAT 320 </h4>
+                                    </div>
+                                <div class="item_img">
+                                        <img src="img/bottom_item_1.png" alt="item-1" class="img-responsive">
+                                        <div class="price_item absolute background_black">
+                                                <p>от <span class="up price">  6 000   </span>     руб./час</p>
+                                        </div>
+                                        </div>
+                                         <div class="item_options background_gray">
+                                                 <span>
+                                                         Высота подъема люльки: 	18 м.
+                                                 </span>
+                                                 <span>
+                                                           Вылет стрелы: 	          9,85 м.
+                                                     </span>
+                                                 <span>
+                                                    Максимальная г/п люльки: 	250 кг.
+                                                     </span>
+                                                 <span>
+                                                     Габаритные размеры: 	2,42х6,81х2,68 м.
+                                                     </span>
+                                         </div>
+
+
+                        </div>
+                        <div class="col-md-4">
+                                <div class="title">
+                                        <h4>Бульдозер CAT D5N</h4>
+                                </div>
+                                <div class="item_img">
+                                        <img src="img/bottom_item_2.png" alt="item-2"
+                                                           class="img-responsive">
+                                        <div class="price_item absolute background_black">
+                                                <p>от <span class="up price">  6 000   </span>     руб./час</p>
+                                        </div>
+                                        </div>
+                                                <div class="item_options">
+                                                        <span>
+                                                         Ходовая: Болотный, гусеницы – 760мм
+                                                 </span>
+                                                 <span>
+                                                           Навесное оборудование: Планировочный отвал, V= 3,2м3
+                                                     </span>
+                                                 <span>
+                                                     Навесное оборудование: Рыхлитель, глубина – 300мм
+                                                     </span>
+                                                 <span>
+                                                     Масса: 14 тонн
+                                                     </span>
+                                                </div>
+
+                        </div>
+                        <div class="col-md-4">
+                                <div class="title">
+                                        <h4>Вибро-каток грунтовый Bomag BW 177</h4>
+                                </div>
+                                <div class="item_img">
+                                        <img src="img/bottom_item_3.png" alt="item-3" class="img-responsive">
+                                        <div class="price_item absolute background_black">
+                                                <p>от <span class="up price">  6 000   </span>     руб./час</p>
+                                        </div>
+                                        </div>
+                                        <div class="item_options">
+                                                 <span>
+                                                         Ходовая: двухосный
+                                                 </span>
+                                                 <span>
+                                                           Навесное оборудование: Ковш V = 0,8 м3
+                                                     </span>
+                                                 <span>
+                                                     Навесное оборудование: Гидромлот Furukawa F12,
+                                                     </span>
+                                                 <span>
+                                                     Масса: 15 тонн
+                                                     </span>
+                                        </div>
+
+                        </div>
+                </div>
+        </div>
+        <div class="clearfix" style="width: 100%">
+     <div class="black_block pull-right hidden-xs hidden-sm">
+             </div>
+
+     </div>
+</main>
+<div class="pre_footer"></div>
+<footer class="background_black clearfix">
+      <div class="container all_width">
+              <div class="row">
+                      <div class="col-md-4 hidden-xs hidden-sm">
+                              <div class="row">
+                                      <div class="footer_logo col-md-6">
+                                              <a href="index.html"><img src="img/footer_logo.png" alt="logo"
+                                                                    class="img-responsive">
+                                              </a>
+                                              <p class="up">Стройтех</p>
+                                      </div>
+                                      <div class="copyright col-md-6">
+                                              <span class="up">&copy; Стройтех 2016.</span>
+                                      </div>
+                              </div>
+                      </div>
+                      <div class="col-md-4 col-xs-6">
+                              <div class="row">
+                                    <div class="footer_contacts">
+                                            <span class="up">Санкт-Петербург, пр. Большевиков, 632</span>
+                                            <h2>+7 (499) 703-39-00</h2>
+                                    </div>
+                              </div>
+                      </div>
+                      <div class="col-md-4 col-xs-6">
+                              <div class="row">
+                                      <div class="col-md-6 umi_copy">
+                                              <span class="gray_text">Сайт создан бесплатно  на 1С-UMI</span>
+                                              <span class="gray_text">Работает на UMI.CMS</span>
+                                      </div>
+                                      <div class="col-md-6 footer_social hidden-xs hidden-sm">
+                                              <ul class="list_inline">
+                                                      <li><a href="#"><i class="sprite_social sprite-footer_fb"></i></a></li>
+                                                      <li><a href="#"><i class="sprite_social sprite-footer_inst"></i></a></li>
+                                                      <li><a href="#"><i class="sprite_social sprite-footer_odn"></i></a></li>
+                                                      <li><a href="#"><i class="sprite_social sprite-footer_tw"></i></a></li>
+                                                      <li><a href="#"><i class="sprite_social sprite-footer_vk"></i></a></li>
+                                              </ul>
+                                      </div>
+                                      </div>
+                      </div>
+                      <div class="row visible-xs visible-sm social_mobile">
+                              <div>
+                              <div class="col-xs-1">
+                                      <a href="#"><i class="sprite_social sprite-footer_fb"></i></a>
+                              </div>
+                              <div class="col-xs-1">
+                                      <a href="#"><i class="sprite_social sprite-footer_inst"></i></a>
+
+                              </div>
+                              <div class="col-xs-1">
+                                      <a href="#"><i class="sprite_social sprite-footer_odn"></i></a>
+                              </div>
+                              <div class="col-xs-1">
+                                      <a href="#"><i class="sprite_social sprite-footer_tw"></i></a>
+                              </div>
+                              <div class="col-xs-1">
+                                      <a href="#"><i class="sprite_social sprite-footer_vk"></i></a>
+                              </div>
+                      </div>
+                              </div>
+
+              </div>
+      </div>
+</footer>
+<script src="js/script.js">
+</script>
+</body>
+</html>

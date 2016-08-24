@@ -1,0 +1,100 @@
+.pre_footer {
+  padding-bottom: 250px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  font-family: #ffffff;
+  height: 250px;
+  width: 100%;
+}
+footer .row {
+  height: 250px;
+}
+footer .footer_logo {
+  background: #ffffff;
+  height: 250px;
+  padding: 90px 0;
+}
+footer .footer_logo img {
+  display: block;
+  margin: 0 auto;
+}
+footer .footer_logo p {
+  font-family: 'uni-sans';
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
+}
+footer .copyright {
+  color: #ffffff;
+  text-align: center;
+  padding: 90px 0;
+}
+footer .copyright span {
+  font-family: 'helvetica-med';
+  font-size: 12px;
+}
+footer .footer_contacts {
+  padding: 90px 0 90px 50px;
+}
+footer .footer_contacts span,
+footer .footer_contacts h2 {
+  font-family: 'helvetica-med';
+  color: #ffffff;
+  display: block;
+}
+footer .footer_contacts span:first-of-type,
+footer .footer_contacts h2:first-of-type {
+  font-size: 12px;
+}
+footer .footer_contacts h2 {
+  font-size: 22px !important;
+}
+footer .umi_copy {
+  padding: 90px 0 90px 0;
+  color: #676767;
+  font-family: 'helvetica-med';
+}
+footer .umi_copy span {
+  font-size: 12px;
+  display: block;
+}
+footer .footer_social {
+  padding: 90px 0;
+}
+footer .footer_social ul {
+  text-align: right;
+}
+footer .footer_social ul li {
+  margin-right: 5px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+footer .footer_social ul li:hover {
+  filter: brightness(110%);
+  -moz-filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+footer .footer_social ul li:hover {
+  transform: scale(1.1);
+}
+.social_mobile > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}

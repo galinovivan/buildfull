@@ -1,0 +1,130 @@
+@import-once "default.less";
+@import-once "header.less";
+@import-once "footer.less";
+
+.news {
+  margin-bottom: 50px;
+
+  .row {
+    &>div {
+      padding: 60px 0;
+    }
+
+    .caption {
+      .padding_margin_clear();
+      font-size: @mediumSize;
+      padding: 0 10%;
+      margin-bottom: 40px;
+    }
+
+
+        .media-object {
+          font-size: @h2_larg;
+          font-family: @helveticaBold;
+          .no_link();
+          .padding_margin_clear();
+
+        }
+        .media-body {
+          vertical-align: middle;
+          .media-heading {
+            font-family: @helveticaMedium;
+            font-size: @baseFontSize;
+            .padding_margin_clear();
+
+          }
+          p {
+            color: @textGray;
+            font-family: @helveticaMedium;
+          }
+        }
+
+
+
+      }
+      .small-capt {
+        height: 50px;
+        margin-top: 30px;
+
+        p {
+          font-family: @helveticaMedium;
+          font-size: @baseFontSize + 2;
+        }
+
+      }
+      .content {
+        p {
+          color: @textGray;
+          font-size: 12px;
+          line-height: 1.7;
+          margin-top: 30px;
+          height: 60px;
+          padding-right: 30%;
+
+        }
+      }
+      .more {
+        margin-top: 20px;
+        a {
+          .img_hover();
+          img {
+            .hover_scale(1.03, 0.1s);
+          }
+
+        }
+      }
+
+  }
+@media screen and(max-width: 1500px) {
+  .news {
+    .small-capt {
+      padding-right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .news {
+    .container {
+      .row {
+        &>div {
+          position: relative;
+          border-bottom: 1px solid @bord_color;
+          padding: 60px 10%;
+          .content {
+            p {
+              font-size: @baseFontSize - 2;
+            }
+          }
+        }
+        .more {
+          margin-top: 50px !important;
+        }
+      }
+    }
+    &+.container {
+      padding-left: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news {
+    .container {
+      .row {
+        .more {
+          position: absolute;
+          top: 0;
+          right: 50px;
+        }
+      }
+    }
+  }
+}
+.about_content {
+  padding: 100px;
+}
+
+
+
+
+

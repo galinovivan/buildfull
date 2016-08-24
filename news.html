@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Новости
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/sprites.css">
+   <link rel="stylesheet" href="css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+</head>
+<body>
+<!--modal-->
+<div class="modal fade" id="callBackModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><img
+                        src="img/modal_close.png" alt="close"></button>
+                <h2 class="up modal-title">Оставить заявку</h2>
+
+            </div>
+            <div class="modal-body">
+                <form method="post" id="callBackForm">
+                    <input type="text" name="name" placeholder="Как вас зовут?" required>
+                    <input type="text" name="user_contact" placeholder="Почта или телефон" required>
+                                        <textarea name="messages" id="" cols="30" rows="7"
+                                                  placeholder="А вот тут-то мы и напишем!" required></textarea>
+                    <input type="submit" name="done" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->
+<div class="page_header background_gray hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 top_logo background_white">
+                <a href="index.html"><img src="img/top_logo.png" alt="logo" class="img-responsive"></a>
+                <h2 class="up">Стройтех</h2>
+            </div>
+            <div class="col-md-6 top_nav">
+                <ul class="list_inline">
+                    <li><a href="about.html" class="up">О компании</a></li>
+                    <li><a href="services.html" class="up">Наши услуги</a></li>
+                    <li><a href="news.html" class="up active">Новости</a></li>
+                    <li><a href="contacts.html" class="up">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 top_contacts">
+                <p><span class="gray">+7(499) </span>703-39-00</p>
+            </div>
+            <div class="col-md-2 top_call">
+                <a class="btn_orange" href="#callBackModal" data-toggle="modal">
+                    Оставить заявку
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header mobile-->
+<ul id="mobileMenu" class="visible-xs visible-sm hidden-md">
+    <li><a href="about.html">О компании</a></li>
+    <li><a href="services.html">Наши Услуги</a></li>
+    <li><a href="news.html" class="active">Новости</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+    <li id="menuCloseToggle" class="close_toggle"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+</ul>
+<div class="header_mobile visible-xs visible-sm">
+    <div class="container-fluid">
+        <div class="row">
+            <a id="nav_toggle" class="nav_mobile pull-left">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="logo_mobile">
+                <a href="index.html"><img src="img/logo_mobile.png" alt="logo" class="img-responsive"></a>
+            </div>
+            <div class="contact_mobile pull-right">
+                <a href="call.html"><img src="img/mobile_pen.png" alt="contact"></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--end header mobile -->
+<main>
+    <div class="page_caption">
+        <div class="container">
+            <div class="row">
+                <h1>
+                    Новости
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+<div class="news">
+    <div class="container all_width">
+        <div class="row">
+            <div class="col-md-4 left_news col-sm-6">
+                <div class="date media">
+                    <a class="media-left">
+                        <h2 class="media-object">28</h2>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">АПРЕЛЯ</h4>
+                        <p>2016</p>
+                    </div>
+
+                </div>
+                <div class="small-capt">
+                    <strong><p>Новое интерьвью нашего руководителя!</p></strong>
+
+                </div>
+                <div class="content">
+                    <p>Интервью генерального директора строительной компании «Гогланд» Ильи Николаевича Ёлкина</p>
+                </div>
+                <div class="more">
+                    <a href="#"><img src="img/news_more.png" alt="more"></a>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-4 right_news col-sm-6">
+
+                <div class="date media">
+                    <a class="media-left">
+                        <h2 class="media-object">25</h2>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">МАЯ</h4>
+                        <p>2016</p>
+                    </div>
+                </div>
+                <div class="small-capt">
+                    <strong><p>Мы опять участвуем в выставках!</p></strong>
+
+                </div>
+                <div class="content">
+                    <p>Стройлого примет участие в весенних выставках недвижимости 2016 г.</p>
+                </div>
+                <div class="more">
+                    <a href="#"><img src="img/news_more.png" alt="more"></a>
+                </div>
+                        </div>
+            <div class="col-md-4 right_news col-sm-6">
+
+                <div class="date media">
+                    <a class="media-left">
+                        <h2 class="media-object">25</h2>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">МАЯ</h4>
+                        <p>2016</p>
+                    </div>
+                </div>
+                <div class="small-capt">
+                    <strong><p>Мы опять участвуем в выставках!</p></strong>
+
+                </div>
+                <div class="content">
+                    <p>Стройлого примет участие в весенних выставках недвижимости 2016 г.</p>
+                </div>
+                <div class="more">
+                    <a href="#"><img src="img/news_more.png" alt="more"></a>
+                </div>
+            </div>
+            <div class="col-md-4 right_news col-sm-6">
+
+                <div class="date media">
+                    <a class="media-left">
+                        <h2 class="media-object">25</h2>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">МАЯ</h4>
+                        <p>2016</p>
+                    </div>
+                </div>
+                <div class="small-capt">
+                    <strong><p>Мы опять участвуем в выставках!</p></strong>
+
+                </div>
+                <div class="content">
+                    <p>Стройлого примет участие в весенних выставках недвижимости 2016 г.</p>
+                </div>
+                <div class="more">
+                    <a href="#"><img src="img/news_more.png" alt="more"></a>
+                </div>
+            </div>
+            <div class="col-md-4 right_news col-sm-6">
+
+                <div class="date media">
+                    <a class="media-left">
+                        <h2 class="media-object">25</h2>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">МАЯ</h4>
+                        <p>2016</p>
+                    </div>
+                </div>
+                <div class="small-capt">
+                    <strong><p>Мы опять участвуем в выставках!</p></strong>
+
+                </div>
+                <div class="content">
+                    <p>Стройлого примет участие в весенних выставках недвижимости 2016 г.</p>
+                </div>
+                <div class="more">
+                    <a href="#"><img src="img/news_more.png" alt="more"></a>
+                </div>
+            </div>
+            <div class="col-md-4 right_news col-sm-6">
+
+                <div class="date media">
+                    <a class="media-left">
+                        <h2 class="media-object">25</h2>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">МАЯ</h4>
+                        <p>2016</p>
+                    </div>
+                </div>
+                <div class="small-capt">
+                    <strong><p>Мы опять участвуем в выставках!</p></strong>
+
+                </div>
+                <div class="content">
+                    <p>Стройлого примет участие в весенних выставках недвижимости 2016 г.</p>
+                </div>
+                <div class="more">
+                    <a href="#"><img src="img/news_more.png" alt="more"></a>
+                </div>
+            </div>
+                    </div>
+                </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <ul class="pagination">
+                <li><a href="#"><img src="img/pag_left.png" alt="prev"></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#"><img src="img/pag_right.png" alt="next"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</main>
+<div class="pre_footer"></div>
+<footer class="background_black clearfix">
+    <div class="container all_width">
+        <div class="row clearfix">
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <div class="row">
+                    <div class="footer_logo col-md-6">
+                        <a href="index.html"><img src="img/footer_logo.png" alt="logo"
+                                                  class="img-responsive">
+                        </a>
+                        <p class="up">Стройтех</p>
+                    </div>
+                    <div class="copyright col-md-6">
+                        <span class="up">&copy; Стройтех 2016.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="row">
+                    <div class="footer_contacts">
+                        <span class="up">Санкт-Петербург, пр. Большевиков, 632</span>
+                        <h2>+7 (499) 703-39-00</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="row">
+                    <div class="col-md-6 umi_copy">
+                        <span class="gray_text">Сайт создан бесплатно  на 1С-UMI</span>
+                        <span class="gray_text">Работает на UMI.CMS</span>
+                    </div>
+                    <div class="col-md-6 footer_social hidden-xs hidden-sm">
+                        <ul class="list_inline">
+                            <li><a href="#"><i class="sprite_social sprite-footer_fb"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_inst"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_odn"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_tw"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_vk"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row visible-xs visible-sm social_mobile">
+                <div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_fb"></i></a>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_inst"></i></a>
+
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_odn"></i></a>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_tw"></i></a>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_vk"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+<script src="js/script.js">
+</script>
+
+</body>
+</html>

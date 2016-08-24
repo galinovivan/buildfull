@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <title>Наши услуги</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/media.css">
+    <LINK REL="stylesheet" href="css/sprites.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+</head>
+<body>
+<!--modal-->
+<div class="modal fade" id="callBackModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><img
+                        src="img/modal_close.png" alt="close"></button>
+                <h2 class="up modal-title">Оставить заявку</h2>
+
+            </div>
+            <div class="modal-body">
+                <form method="post" id="callBackForm">
+                    <input type="text" name="name" placeholder="Как вас зовут?" required>
+                    <input type="text" name="user_contact" placeholder="Почта или телефон" required>
+                                        <textarea name="messages" id="" cols="30" rows="7"
+                                                  placeholder="А вот тут-то мы и напишем!" required></textarea>
+                    <input type="submit" name="done" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->
+<div class="page_header background_gray hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 top_logo background_white">
+                <a href="index.html"><img src="img/top_logo.png" alt="logo" class="img-responsive"></a>
+                <h2 class="up">Стройтех</h2>
+            </div>
+            <div class="col-md-6 top_nav">
+                <ul class="list_inline">
+                    <li><a href="about.html" class="up">О компании</a></li>
+                    <li><a href="services.html" class="up active">Наши услуги</a></li>
+                    <li><a href="news.html" class="up">Новости</a></li>
+                    <li><a href="contacts.html" class="up">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 top_contacts">
+                <p><span class="gray">+7(499) </span>703-39-00</p>
+            </div>
+            <div class="col-md-2 top_call">
+                <a class="btn_orange" href="#callBackModal" data-toggle="modal">
+                    Оставить заявку
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header mobile-->
+<ul id="mobileMenu" class="visible-xs visible-sm hidden-md">
+    <li><a href="about.html">О компании</a></li>
+    <li><a href="services.html" class="active">Наши Услуги</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+    <li id="menuCloseToggle" class="close_toggle"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+</ul>
+<div class="header_mobile visible-xs visible-sm">
+    <div class="container-fluid">
+        <div class="row">
+            <a id="nav_toggle" class="nav_mobile pull-left">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="logo_mobile">
+                <a href="index.html"><img src="img/logo_mobile.png" alt="logo" class="img-responsive"></a>
+            </div>
+            <div class="contact_mobile pull-right">
+                <a href="call.html"><img src="img/mobile_pen.png" alt="contact"></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--end header mobile-->
+<main>
+<div class="page_caption">
+    <div class="container">
+        <div class="row">
+    <h1>Наши услуги</h1>
+            </div>
+        </div>
+</div>
+   <div class="page_items">
+           <div class="container all_width">
+               <div class="row">
+               <div class="col-md-4 col-xs-6">
+                   <div class="row">
+                       <div class="item col-xs-6">
+                           <h4>Аренда</h4>
+                           <h4>Автокранов</h4>
+                       </div>
+                       <div class="col-xs-6 item">
+                           <img src="img/category_item_1.png" alt="item" class="img-responsive">
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4 col-xs-6">
+                   <div class="row">
+                       <div class="col-xs-6 item">
+                            <h4>Аренда</h4>
+                           <h4>Самосвалов</h4>
+                       </div>
+                       <div class="col-xs-6 item">
+                           <img src="img/category_item_2.png" alt="item" class="img-responsive">
+                       </div>
+                   </div>
+
+               </div>
+               <div class="col-md-4 col-xs-6">
+                   <div class="row">
+                       <div class="col-xs-6 item">
+                           <h4>Аренда</h4>
+                           <h4>Эксковаторов</h4>
+                       </div>
+                       <div class="col-xs-6 item">
+                           <img src="img/category_item_3.png" alt="item" class="img-responsive">
+                       </div>
+                   </div>
+                   </div>
+                   <div class="col-md-4 col-xs-6">
+                       <div class="row">
+                           <div class="col-xs-6 item">
+                               <h4>Аренда</h4>
+                               <h4>Грунтовых <br />
+                               Катков
+                               </h4>
+                           </div>
+                           <div class="col-xs-6 item">
+                               <img src="img/category_item_4.png" alt="item" class="img-responsive">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-4 col-xs-6">
+                       <div class="row">
+                           <div class="col-xs-6 item">
+                               <h4>Аренда</h4>
+                               <h4>Мини-погрузчиков</h4>
+                           </div>
+                           <div class="col-xs-6 item">
+                               <img src="img/category_item_5.png" alt="item" class="img-responsive">
+                           </div>
+                       </div>
+
+                   </div>
+                   <div class="col-md-4 col-xs-6">
+                       <div class="row">
+                           <div class="col-xs-6 item">
+                               <h4>Аренда</h4>
+                               <h4>Погрузчиков</h4>
+                           </div>
+                           <div class="col-xs-6 item">
+                               <img src="img/category_item_6.png" alt="item" class="img-responsive">
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+    <div class="clearfix" style="width: 100%">
+        <div class="black_block pull-right hidden-xs hidden-sm">
+        </div>
+
+    </div>
+</main>
+<div class="pre_footer"></div>
+<footer class="background_black clearfix">
+    <div class="container all_width">
+        <div class="row">
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <div class="row">
+                    <div class="footer_logo col-md-6">
+                        <a href="index.html"><img src="img/footer_logo.png" alt="logo"
+                                                  class="img-responsive">
+                        </a>
+                        <p class="up">Стройтех</p>
+                    </div>
+                    <div class="copyright col-md-6">
+                        <span class="up">&copy; Стройтех 2016.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="row">
+                    <div class="footer_contacts">
+                        <span class="up">Санкт-Петербург, пр. Большевиков, 632</span>
+                        <h2>+7 (499) 703-39-00</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="row">
+                    <div class="col-md-6 umi_copy">
+                        <span class="gray_text">Сайт создан бесплатно  на 1С-UMI</span>
+                        <span class="gray_text">Работает на UMI.CMS</span>
+                    </div>
+                    <div class="col-md-6 footer_social hidden-xs hidden-sm">
+                        <ul class="list_inline">
+                            <li><a href="#"><i class="sprite_social sprite-footer_fb"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_inst"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_odn"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_tw"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_vk"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row visible-xs visible-sm social_mobile">
+                <div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_fb"></i></a>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_inst"></i></a>
+
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_odn"></i></a>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_tw"></i></a>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_vk"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="js/script.js">
+</script>
+</body>
+</html>

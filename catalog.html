@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <title>
+         Каталог
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/sprites.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+
+</head>
+<body>
+<div class="modal fade" id="callBackModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><img
+                        src="img/modal_close.png" alt="close"></button>
+                <h2 class="up modal-title">Оставить заявку</h2>
+
+            </div>
+            <div class="modal-body">
+                <form method="post" id="callBackForm">
+                    <input type="text" name="name" placeholder="Как вас зовут?" required>
+                    <input type="text" name="user_contact" placeholder="Почта или телефон" required>
+                                        <textarea name="messages" id="" cols="30" rows="7"
+                                                  placeholder="А вот тут-то мы и напишем!" required></textarea>
+                    <input type="submit" name="done" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page_header background_gray hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 top_logo background_white">
+                <a href="index.html"><img src="img/top_logo.png" alt="logo" class="img-responsive"></a>
+                <h2 class="up">Стройтех</h2>
+            </div>
+            <div class="col-md-6 top_nav">
+                <ul class="list_inline">
+                    <li><a href="about.html" class="up">О компании</a></li>
+                    <li><a href="services.html" class="up active">Наши услуги</a></li>
+                    <li><a href="news.html" class="up">Новости</a></li>
+                    <li><a href="contacts.html" class="up">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 top_contacts">
+                <p><span class="gray">+7(499) </span>703-39-00</p>
+            </div>
+            <div class="col-md-2 top_call">
+                <a class="btn_orange" href="#callBackModal" data-toggle="modal">
+                    Оставить заявку
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header mobile-->
+<ul id="mobileMenu" class="visible-xs visible-sm hidden-md">
+    <li><a href="about.html" class="active">О компании</a></li>
+    <li><a href="services.html">Наши Услуги</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+    <li id="menuCloseToggle" class="close_toggle"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+</ul>
+<div class="header_mobile visible-xs visible-sm">
+    <div class="container-fluid">
+        <div class="row">
+            <a id="nav_toggle" class="nav_mobile pull-left">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="logo_mobile">
+                <a href="index.html"><img src="img/logo_mobile.png" alt="logo" class="img-responsive"></a>
+            </div>
+            <div class="contact_mobile pull-right">
+                <a href="call.html"><img src="img/mobile_pen.png" alt="contact"></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--end header mobile-->
+<main>
+    <div class="page_caption">
+        <div class="container">
+            <div class="row">
+                <a href="#" class="back_catalog visible-xs visible-sm">
+                    <img src="img/back_catalog.png" alt="back">
+                </a>
+                <h1>Экскаваторы</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row background_black">
+            <div class="hidden-xs hidden-sm col-md-12 col-lg-10">
+            <ul class="category_nav list_inline">
+                <li><a href="#">Автокраны</a></li>
+                <li><a href="#">Самосвалы</a></li>
+                <li><a href="#" class="active">Экскаваторы</a></li>
+                <li><a href="#">Грунтовые катки</a></li>
+                <li><a href="#">Мини-погрузчики</a></li>
+                <li><a href="#">Компрессоры</a></li>
+            </ul>
+                </div>
+        </div>
+    </div>
+    <div class="container all_width">
+        <div class="row popular_items">
+            <div class="col-md-4">
+                <div class="title">
+                    <h4>Экскаватор гусеничный CAT 320 </h4>
+                </div>
+                <div class="item_img">
+                    <img src="img/bottom_item_1.png" alt="item-1" class="img-responsive">
+                    <div class="price_item absolute background_black">
+                        <p>от <span class="up price">  6 000   </span>     руб./час</p>
+                    </div>
+                </div>
+                <div class="item_options">
+                                                 <span>
+                                                         Высота подъема люльки: 	18 м.
+                                                 </span>
+                                                 <span>
+                                                           Вылет стрелы: 	          9,85 м.
+                                                     </span>
+                                                 <span>
+                                                    Максимальная г/п люльки: 	250 кг.
+                                                     </span>
+                                                 <span>
+                                                     Габаритные размеры: 	2,42х6,81х2,68 м.
+                                                     </span>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="title">
+                    <h4>Бульдозер CAT D5N</h4>
+                </div>
+                <div class="item_img">
+                    <img src="img/bottom_item_2.png" alt="item-2"
+                         class="img-responsive">
+                    <div class="price_item absolute background_black">
+                        <p>от <span class="up price">  6 000   </span>     руб./час</p>
+                    </div>
+                </div>
+                <div class="item_options">
+                                                        <span>
+                                                         Ходовая: Болотный, гусеницы – 760мм
+                                                 </span>
+                                                 <span>
+                                                           Навесное оборудование: Планировочный отвал, V= 3,2м3
+                                                     </span>
+                                                 <span>
+                                                     Навесное оборудование: Рыхлитель, глубина – 300мм
+                                                     </span>
+                                                 <span>
+                                                     Масса: 14 тонн
+                                                     </span>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="title">
+                    <h4>Вибро-каток грунтовый Bomag BW 177</h4>
+                </div>
+                <div class="item_img">
+                    <img src="img/bottom_item_3.png" alt="item-3" class="img-responsive">
+                    <div class="price_item absolute background_black">
+                        <p>от <span class="up price">  6 000   </span>     руб./час</p>
+                    </div>
+                </div>
+                <div class="item_options">
+                                                 <span>
+                                                         Ходовая: двухосный
+                                                 </span>
+                                                 <span>
+                                                           Навесное оборудование: Ковш V = 0,8 м3
+                                                     </span>
+                                                 <span>
+                                                     Навесное оборудование: Гидромлот Furukawa F12,
+                                                     </span>
+                                                 <span>
+                                                     Масса: 15 тонн
+                                                     </span>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="title">
+                    <h4>Экскаватор гусеничный CAT 320 </h4>
+                </div>
+                <div class="item_img">
+                    <img src="img/item_1.png" alt="item-1" class="img-responsive">
+                    <div class="price_item absolute background_black">
+                        <p>от <span class="up price">  6 000   </span>     руб./час</p>
+                    </div>
+                </div>
+                <div class="item_options">
+                                                 <span>
+                                                         Высота подъема люльки: 	18 м.
+                                                 </span>
+                                                 <span>
+                                                           Вылет стрелы: 	          9,85 м.
+                                                     </span>
+                                                 <span>
+                                                    Максимальная г/п люльки: 	250 кг.
+                                                     </span>
+                                                 <span>
+                                                     Габаритные размеры: 	2,42х6,81х2,68 м.
+                                                     </span>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="title">
+                    <h4>Бульдозер CAT D5N</h4>
+                </div>
+                <div class="item_img">
+                    <img src="img/item_2.png" alt="item-2"
+                         class="img-responsive">
+                    <div class="price_item absolute background_black">
+                        <p>от <span class="up price">  6 000   </span>     руб./час</p>
+                    </div>
+                </div>
+                <div class="item_options">
+                                                        <span>
+                                                         Ходовая: Болотный, гусеницы – 760мм
+                                                 </span>
+                                                 <span>
+                                                           Навесное оборудование: Планировочный отвал, V= 3,2м3
+                                                     </span>
+                                                 <span>
+                                                     Навесное оборудование: Рыхлитель, глубина – 300мм
+                                                     </span>
+                                                 <span>
+                                                     Масса: 14 тонн
+                                                     </span>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="title">
+                    <h4>Вибро-каток грунтовый Bomag BW 177</h4>
+                </div>
+                <div class="item_img">
+                    <img src="img/item_3.png" alt="item-3" class="img-responsive">
+                    <div class="price_item absolute background_black">
+                        <p>от <span class="up price">  6 000   </span>     руб./час</p>
+                    </div>
+                </div>
+                <div class="item_options">
+                                                 <span>
+                                                         Ходовая: двухосный
+                                                 </span>
+                                                 <span>
+                                                           Навесное оборудование: Ковш V = 0,8 м3
+                                                     </span>
+                                                 <span>
+                                                     Навесное оборудование: Гидромлот Furukawa F12,
+                                                     </span>
+                                                 <span>
+                                                     Масса: 15 тонн
+                                                     </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pag_container">
+        <div class="row">
+            <div class="container">
+            <ul class="pagination">
+                <li><a href="#"><img src="img/pag_left.png" alt="prev"></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#"><img src="img/pag_right.png" alt="next"></a></li>
+            </ul>
+                </div>
+            <div class="black_block pull-right hidden-xs hidden-sm cat_block">
+        </div>
+    </div>
+</main>
+
+
+<div class="pre_footer"></div>
+<footer class="background_black clearfix">
+    <div class="container all_width">
+        <div class="row">
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <div class="row">
+                    <div class="footer_logo col-md-6">
+                        <a href="index.html"><img src="img/footer_logo.png" alt="logo"
+                                                  class="img-responsive">
+                        </a>
+                        <p class="up">Стройтех</p>
+                    </div>
+                    <div class="copyright col-md-6">
+                        <span class="up">&copy; Стройтех 2016.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="row">
+                    <div class="footer_contacts">
+                        <span class="up">Санкт-Петербург, пр. Большевиков, 632</span>
+                        <h2>+7 (499) 703-39-00</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="row">
+                    <div class="col-md-6 umi_copy">
+                        <span class="gray_text">Сайт создан бесплатно  на 1С-UMI</span>
+                        <span class="gray_text">Работает на UMI.CMS</span>
+                    </div>
+                    <div class="col-md-6 footer_social hidden-xs hidden-sm">
+                        <ul class="list_inline">
+                            <li><a href="#"><i class="sprite_social sprite-footer_fb"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_inst"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_odn"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_tw"></i></a></li>
+                            <li><a href="#"><i class="sprite_social sprite-footer_vk"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row visible-xs visible-sm social_mobile">
+                <div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_fb"></i></a>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_inst"></i></a>
+
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_odn"></i></a>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_tw"></i></a>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="#"><i class="sprite_social sprite-footer_vk"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="js/script.js">
+</script>
+</body>
+</html>
