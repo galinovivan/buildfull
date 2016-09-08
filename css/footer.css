@@ -30,9 +30,10 @@ footer .copyright {
   color: #ffffff;
   text-align: center;
   padding: 90px 0;
+  font-family: 'helvetica-light';
 }
 footer .copyright span {
-  font-family: 'helvetica-med';
+  font-family: 'helvetica-bold';
   font-size: 12px;
 }
 footer .footer_contacts {
@@ -40,7 +41,7 @@ footer .footer_contacts {
 }
 footer .footer_contacts span,
 footer .footer_contacts h2 {
-  font-family: 'helvetica-med';
+  font-family: 'helvetica-bold';
   color: #ffffff;
   display: block;
 }
