@@ -41,7 +41,17 @@ form {
 .contact_info {
   width: 420px;
   padding: 50px 0px 50px 70px;
+  height: 350px;
   .media {
+    &:not(:first-of-type) {
+      margin-top: 40px;
+    }
+    &:nth-of-type(2) {
+      h3 {
+        font-size: @h2_size - 2;
+        width: auto;
+      }
+    }
     .media-body {
       vertical-align: middle;
     }
@@ -53,8 +63,9 @@ form {
     color: @white;
     font-size: @baseFontSize - 2;
     font-family: @helveticaMedium;
-    width: 65%;
+    width: 75%;
     padding-left: 50px;
+    text-transform: uppercase;
   }
 }
 .contact_info_mobile {
@@ -68,6 +79,11 @@ form {
     }
     .media-body {
       vertical-align: middle;
+    }
+    &:nth-of-type(2) {
+      h3 {
+        font-size: @h2_size - 2;
+      }
     }
   }
   h3 {

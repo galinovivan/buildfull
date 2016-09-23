@@ -645,6 +645,7 @@ footer .footer_social ul li:hover {
 .news .row .media-body p {
   color: #9d9d9d;
   font-family: 'helvetica-med';
+  margin-top: 5px;
 }
 .news .small-capt {
   height: 50px;
@@ -706,6 +707,9 @@ footer .footer_social ul li:hover {
   }
   .news + .container {
     padding-left: 10%;
+  }
+  .news .content p {
+    margin-top: 17px;
   }
 }
 @media screen and (max-width: 767px) {

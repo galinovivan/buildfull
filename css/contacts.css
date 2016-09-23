@@ -673,6 +673,14 @@ footer .footer_social ul li:hover {
 .contact_info {
   width: 420px;
   padding: 50px 0px 50px 70px;
+  height: 350px;
+}
+.contact_info .media:not(:first-of-type) {
+  margin-top: 40px;
+}
+.contact_info .media:nth-of-type(2) h3 {
+  font-size: 22px;
+  width: auto;
 }
 .contact_info .media .media-body {
   vertical-align: middle;
@@ -681,8 +689,9 @@ footer .footer_social ul li:hover {
   color: #ffffff;
   font-size: 14px;
   font-family: 'helvetica-med';
-  width: 65%;
+  width: 75%;
   padding-left: 50px;
+  text-transform: uppercase;
 }
 .contact_info_mobile {
   padding: 60px 0;
@@ -697,6 +706,9 @@ footer .footer_social ul li:hover {
 }
 .contact_info_mobile .media .media-body {
   vertical-align: middle;
+}
+.contact_info_mobile .media:nth-of-type(2) h3 {
+  font-size: 22px;
 }
 .contact_info_mobile h3 {
   color: #ffffff;

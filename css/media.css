@@ -28,9 +28,6 @@
   main .adventage > div {
     border: none;
   }
-  main .adventage > div:not(:last-child) {
-    border-bottom: 1px solid #ffffff;
-  }
   main .section_capt {
     background-image: none;
   }

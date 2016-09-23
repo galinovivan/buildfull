@@ -337,6 +337,13 @@ main {
 
 
        }
+        .media-object {
+          font-size: @h2_larg;
+          font-family: @helveticaBold;
+          .no_link();
+          .padding_margin_clear();
+
+        }
         .small-capt {
           height: 75px;
           p {
@@ -429,7 +436,9 @@ height: 110px;
     font-size: @baseFontSize + 2;
 
   }
-
+@media screen and (max-width: 991px) {
+  height: auto;
+}
 }
   .item_img {
     position: relative;
